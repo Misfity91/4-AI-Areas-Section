@@ -1,0 +1,217 @@
+/// Homepage Styles File
+/// Here we import all the Styles files we need for our Homepage.
+
+#home-page {
+	width: 375px;
+	height: 1184px;
+	margin: 0 auto;
+}
+
+.header {
+	width: 343px;
+	margin: auto;
+	padding: 48px 0 24px;
+
+	&__title {
+		font-weight: 500;
+		font-size: 32px;
+		line-height: 40px;
+		letter-spacing: -0.002em;
+		height: 80px;
+		margin-top: 0;
+		margin-bottom: 16px;
+	}
+	&__info {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 24px;
+		height: 120px;
+		margin: 0;
+	}
+}
+
+.specializes {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	align-items: center;
+	&__box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 343px;
+		min-height: 196px;
+		background-color: var(--dark-blue);
+		border-radius: 20px;
+		
+
+		&-img {
+			display: flex;
+			min-width: 56px;
+			min-height: 56px;
+			border-radius: 14px;
+			justify-content: center;
+			align-items: center;
+			margin-top: 20px;
+			margin-bottom: 16px;
+
+			&--violet {
+				background-color: #373155;
+			}
+
+			&--blue {
+				background-color: #2c3455;
+			}
+
+			&--green {
+				background-color: #274255;
+			}
+
+			&--yellow {
+				background-color: #3d413f;
+			}
+
+			&-item {
+				width: 28px;
+				height: 28px;
+			}
+		}
+
+		&-title {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 20px;
+			width: 167px;
+			height: 24px;
+			line-height: 24px;
+			font-weight: 500;
+			margin: 0px;
+		}
+
+		&-info {
+			width: 303px;
+			min-height: 44px;
+			text-align: center;
+			opacity: 0.5;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 22px;
+			margin-top: 16px;
+			margin-bottom: 20px;
+		}
+	}
+}
+
+@media (min-width: 834px) {
+	body {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+	}
+
+	#home-page {
+		width: 496px;
+		height: 700px;
+	}
+
+	.header {
+		width: 490px;
+		padding: 0 0 24px;
+
+		&__title {
+			font-size: 48px;
+			line-height: 56px;
+			height: 112px;
+		}
+
+		&__info {
+			height: 96px;
+			width: 496px;
+		}
+	}
+
+	.specializes {
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: stretch;
+		&__box {
+
+			width: 240px;
+			min-height: 218px;
+			&-info {
+				display: flex;
+				width: 209px;
+				min-height: 66px;
+				line-height: 22px;
+				height: 100%;
+			}
+		}
+	}
+}
+
+@media (min-width: 1440px) {
+	#home-page {
+		width: 1136px;
+		height: 511px;
+		display: flex;
+		justify-content: center;
+        align-items: flex-start;
+		gap: 109px;
+	}
+	.header {
+		width: 467px;
+		height: 232px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		gap: 24px;
+		margin: 0;
+		padding: 0;
+
+		&__title {
+			margin-bottom: 0;
+		}
+		&__info {
+			width: 467px;
+			height: 96px;
+		}
+	}
+
+	.specializes {
+		width: 560px;
+		min-height: 511px;
+		align-content: center;
+		gap: 31px 24px;
+
+		&__box {
+			min-width: 268px;
+			min-height: 240px;
+			border-radius: 24px;
+
+			&-img {
+				min-width: 64px;
+				min-height: 64px;
+				margin-top: 24px;
+
+				&-item {
+					min-width: 32px;
+					min-height: 32px;
+				}
+			}
+			&-title {
+			
+				width: 263px;
+			}
+			&-info {
+				width: 236px;
+				min-height: 72px;
+				font-size: 16px;
+				line-height: 24px;
+			}
+		}
+	}
+}
